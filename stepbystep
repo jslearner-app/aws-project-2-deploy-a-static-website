@@ -1,0 +1,36 @@
+Setting up our pc by Install AWS CLI
+Configure IAM User's Access Key
+Test AWS CLI
+Creating a Github Repository
+Uploading our Web Files to a Github Repository
+VPC Creation
+DNS Host Name Setting in VPC
+Internet Gateway Creation and Setup
+Subnet Creation
+Auto-Assign IP in Public Subnet
+Setting up Public Subnet Route Table
+Nat Gateway Project Requirement
+Nat Gateway Creation
+Setting up Private Subnet Route Table
+Security Group Creation
+Create the EC2 Instance Connect Endpoint
+Launch an EC2 Instance
+SSH into an EC2 Instance from the management console
+SSH into the EC2 Instance Using AWS CLI
+Terminate the EC2 Instance
+Create Targe Group
+Launch an EC2 Instance
+Add the EC2 Instance to the target group
+Create Application load balancer
+Preparing the script to install the website
+Install the Website on EC2 Instance
+Create an A record
+Request an SSL Certificate
+Setup HTTPS Listener for the Application load balancer
+Terminate the EC2 Instance
+Prepare the Bash Script
+Create Launch Template
+Create Auto Scaling Group
+Accept the SNS Subscription
+Cleanup the Resource
+Add Project to a Github Repository

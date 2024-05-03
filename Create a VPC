@@ -1,0 +1,10 @@
+Login to management console
+select region you want to create VPC 
+type VPC in the serach box 
+VPC only ---- Name tag give it a name : Dev VPC
+Ipv4 CIDR : 10.0.0.0/16
+Tenancy: Default
+Enable DNS Host Name in VPC ---- action -----Edit VPC setting ----Enable DNS host name
+Next
+Create Internet Gateway ----give it a name and create internet gateway
+attached internet gateway to VPC

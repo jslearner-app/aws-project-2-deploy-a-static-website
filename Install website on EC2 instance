@@ -1,0 +1,11 @@
+We will use  our script preparation step to install the website on EC2 instance
+
+First we need to ssh in to our EC2 instance.
+
+Click EC2 instance and connect using endpoint
+ then follow our script command one by one.
+
+ We have launch our website
+
+ we need to terminate the EC2 Instance and create launch template for Auto Scaling
+

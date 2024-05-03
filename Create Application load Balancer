@@ -1,0 +1,49 @@
+First we need to create target group
+
+In the dashboard type EC2
+scrol down click target group and create target group
+
+Choose a target type : Instances
+Target group name : Dev-TG
+Protocol : Port : HTTP
+IP address type : IPv4
+VPC : select your vpc
+click next and click create target group
+
+Next to launch EC2 instance in Private Subnet
+ click launch instance
+
+ Name and tags : web server az1
+ quick start : Amazon Machine Image (AMI)
+ Instance type : t2 micro
+ Key pair name : Proceed without keypair 
+ Network settings 
+ VPC : select your vpc
+ Subnet : private app subnet az1
+ Firewall (security groups) : 
+ select existing sg : app server sg
+
+ Then click launch instance.
+
+ Next add EC2 instance to target group we created
+
+ scrol down click target group --- click on Dev-TG and scrol down ---- click register targets --- then select your instance --- click include as pending bellow then click register pending target.
+
+ Next Create Application Load Balancer
+
+ click create application load balancer 
+
+ Load balancer name : Dev-ALB
+ Scheme : Internet-facing
+ IP address type: IPv4
+ VPC select your vpc
+ Mappings : us-east-1a (use1-az1) --- public subnet az1
+            us-east-1b (use1-az2) --- public subnet az2
+            ***Remember Application Load Balancer only work on public subnet.
+
+Security groups : ALB sg
+ListenerHTTP:80 
+Forword to : Dev-TG
+ Then click create create application load balancer
+
+ 

@@ -1,0 +1,15 @@
+click on route table to make the 2 public subnet public
+
+click on create route table
+name : give route a name
+vpc: select our vpc 
+
+then click create route table
+
+The Next is to add route 
+
+click edit route ----destination : 0.0.0.0/0
+                    target : internet gateway---igw
+
+Next Associate both public subnet 
+click subnet association ----edit subnet association add public subnet az1 and public subnet az2 and save association

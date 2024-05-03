@@ -1,0 +1,58 @@
+launch ec2 instance to check if we can connect to the endpoint
+
+In the dashboard type EC2 and click ec2
+
+click launch ec2
+
+Name and tags : Test EC2
+quick start : amazon linux
+Amazon Machine Image (AMI) : free tier
+Instance type : t2 micro
+Key pair name: proceed without keypair because we are going to connect with endpoint its doesnt neccessary 
+Network settings 
+vpc : select your vpc
+Subnet : private app subnet az1 
+Auto-assign public IP : Disable because we are launching ec2 in the private subnet
+Firewall (security groups) : select existing sg
+Common security groups : app server sg
+
+review and launch instance.
+
+After the status check has passed
+ select ec2 instance and click connect 
+ connect type: Connect using EC2 Instance Connect Endpoint
+ EC2 Instance Connect Endpoint : select your endpoint 
+
+ Then click connect
+[ec2-user@ip-10-0-2-101 ~]$ sudo yum update -y
+Last metadata expiration check: 0:06:47 ago on Fri May  3 06:46:51 2024.
+Dependencies resolved.
+Nothing to do.
+Complete!
+[ec2-user@ip-10-0-2-101 ~]$
+
+we have confirm that we can connect to endpoint 
+
+Let connect through AWS CLI as the second way to connect to endpoint 
+
+Open powershell 
+
+first command 
+# check if you have AWS CLI on your pc 
+aws --version
+PS C:\Users\b2aa1> aws --version
+aws-cli/2.15.25 Python/3.11.8 Windows/10 exe/AMD64 prompt/off
+ we have aws cli install 
+
+Next command 
+aws ec2-instance-connect ssh --instance-id your ec2 id
+
+next command
+# install appach on instance
+sudo yum install httpd
+Complete!
+[ec2-user@ip-10-0-2-101 ~]$
+we have check that we can connect to endpoint and install aparch
+
+let terminate ec2 instance
+

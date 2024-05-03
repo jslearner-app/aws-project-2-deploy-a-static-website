@@ -1,0 +1,11 @@
+We have to clean up our server since we are doing this for education pupose so that we wont get charge
+
+First delete Auto scaling group.
+Delete Launch Template
+Delete SNS
+Delete Application load Balancer
+Delete Target Group
+Delete Endpoint
+Delete Nat gateway
+Delete vpc
+Delete elastic ip

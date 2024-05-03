@@ -1,0 +1,45 @@
+On the EC2 dashboard click launch template
+create launch template
+Launch template name : Dev-launch-template
+Template version description : Dev-launch-template
+Auto Scaling guidance : checked
+quick start :Amazon Machine Image (AMI)
+Instance type : t2 micro
+Key pair : Dont include in launch template
+Subnet : Dont include in launch template
+Advanced details --- scrol down 
+User data --- then paste our launch template script their. 
+
+Then click launch template
+
+Create Auto Scaling
+create auto scaling
+Auto Scaling group name : Dev-ASG
+Launch template : select your launch template we created
+click Next
+VPC : select vpc
+Availability Zones and subnets : us-east-1a ---- private app subnet az1
+                                 us-east-1b ---- private app subnet az2
+
+click Next
+Load balancing : Attach to an existing load balancer
+Attach to an existing load balancer : Existing load balancer target groups --- select your target group
+Select VPC Lattice service to attach : No VPC Lattice service
+Health checks :Turn on Elastic Load Balancing health checks
+click Next
+
+Desired capacity : 2
+Scaling limits 
+Min desired capacity: 1
+Max desired capacity : 3
+Automatic scaling : No scaling policies
+
+click Next
+Add notifications : if you like to receive notification from AWS for your autoscaling group.
+
+click Add notifications 
+click create topic 
+topic name : Dev Topic
+email: 
+
+Then click Next, Next Create Auto Scaling Group

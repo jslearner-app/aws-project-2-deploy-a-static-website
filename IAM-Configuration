@@ -1,0 +1,11 @@
+type aws configure on powershell
+# aws configure
+the press enter
+AWS Access key:
+Aws Secrete access key:
+Default region: us-east-1
+
+to see your creadential go to your directory .aws 
+
+to confirm that you configure IAM user correctly 
+# aws iam get-user

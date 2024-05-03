@@ -1,0 +1,11 @@
+VPC dash board
+click Nat Gateway
+create nat Gateway
+
+name : give nat Gateway a name
+subnet : nat Gateway always go with public subnet. so select first availability zone 
+Connectivity type: public
+Allocate Elastic Ip:
+
+Then click create nat gateway
+wait for state of nat gateway to be available before proceed

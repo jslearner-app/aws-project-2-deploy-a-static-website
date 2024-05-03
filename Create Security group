@@ -1,0 +1,37 @@
+vpc dashboard
+click security group
+create security group
+security group name : ALB SG
+Description : ALB SG
+vpc : select your vpc
+Inbound rules : add Inbound rules
+port 80  SOURCE: 0.0.0.0/0
+Port 443 SOURCE:  0.0.0.0/0
+
+Outbound rules: All traffic
+ CLICK CREATE SECURITY GROUP
+
+NEXT 
+
+create another security group
+security group name : EICE sg
+Description : EICE sg
+vpc : select your vpc
+Inbound rules : NO Inbound rules
+
+Outbound rules: ssh 
+SOURCE : our vpc cidr block
+ CLICK CREATE SECURITY GROUP
+
+create security group
+security group name : app server sg
+Description : app server sg
+vpc : select your vpc
+Inbound rules : add Inbound rules
+port 80  SOURCE: ALB SG
+Port 443 SOURCE:  ALB SG
+port 22 SOURCE : EICE sg
+
+Outbound rules: All traffic
+ CLICK CREATE SECURITY GROUP
+

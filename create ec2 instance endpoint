@@ -1,0 +1,9 @@
+click endpoint
+create endpoint 
+Name tag : Dev EICE
+Service category : EC2 Instance Connect Endpoint
+VPC : select your VPC
+Security groups : EICE sg
+Subnet : private app subnet az2 
+
+click create endpoint
