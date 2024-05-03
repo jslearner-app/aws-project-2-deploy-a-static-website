@@ -1,4 +1,4 @@
-![Alt text](/[https://github.com/jslearner-app/aws-project-2-deploy-a-static-website/blob/main/Host_a_Static_Website_on_AWS%202.png?raw=true](https://github.com/jslearner-app/aws-project-2-deploy-a-static-website/blob/5c26b33126cdb301d509aef0d1ca099f13f80e55/Host_a_Static_Website_on_AWS%202.png))
+
 
 # aws-project-2-deploy-a-static-website
 aws project 2 deploy a static website on aws
