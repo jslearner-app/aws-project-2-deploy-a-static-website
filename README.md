@@ -1,3 +1,5 @@
+![Alt text](/Host_a_Static_Website_on_AWS 2.png)
+
 # aws-project-2-deploy-a-static-website
 aws project 2 deploy a static website on aws
 Hosting a Static Website on AWS
